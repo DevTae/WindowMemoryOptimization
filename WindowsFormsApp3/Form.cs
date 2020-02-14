@@ -70,5 +70,15 @@ namespace WindowsFormsApp3
             coolTimeValid = true;
             timer.Enabled = false;
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("explorer.exe", "https://ahdelron.tistory.com/");
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("explorer.exe", "https://vandp.tistory.com/");
+        }
     }
 }
