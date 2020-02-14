@@ -1,0 +1,9 @@
+C:\Users\fmkms\source\repos\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\Reboot.exe
+C:\Users\fmkms\source\repos\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\Reboot.pdb
+C:\Users\fmkms\source\repos\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form.resources
+C:\Users\fmkms\source\repos\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\Reboot.Properties.Resources.resources
+C:\Users\fmkms\source\repos\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\Reboot.csproj.GenerateResource.cache
+C:\Users\fmkms\source\repos\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\Reboot.csproj.CoreCompileInputs.cache
+C:\Users\fmkms\source\repos\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\Reboot.exe
+C:\Users\fmkms\source\repos\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\Reboot.pdb
+C:\Users\fmkms\source\repos\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\Reboot.csprojAssemblyReference.cache
