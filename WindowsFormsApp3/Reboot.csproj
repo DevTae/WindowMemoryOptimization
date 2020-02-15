@@ -93,6 +93,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Image\REBOOT.png" />
+    <None Include="Image\REBOOT - pressed.png" />
     <Content Include="REBOOT.ico" />
   </ItemGroup>
   <ItemGroup>

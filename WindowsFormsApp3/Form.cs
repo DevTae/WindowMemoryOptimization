@@ -20,13 +20,48 @@ namespace WindowsFormsApp3
                                         "winmgmt", "msdtc", "ctfmon", "dfssvc",
                                         "PresentationFontCache", "시스템 유효 시간 프로세스",
                                         "dwm", "services", "wininit",
-                                        "dashost", "dllhost", "sihost"}; // dwm 시각적 효과 부여 프로세스
+                                        "dashost", "dllhost", "sihost", "fontdrvhost" }; // dwm 시각적 효과 부여 프로세스
+                                        // fontdrvhost.exe 종료하면 한글 입력 및 출력 상태 이상해짐
 
         Process[] thisProcess = null;
 
         private void button_Click(object sender, EventArgs e)
         {
-            if(coolTimeValid)
+            
+        }
+
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            pictureBox2.Enabled = true;
+            coolTimeValid = true;
+            timer.Enabled = false;
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("explorer.exe", "https://ahdelron.tistory.com/");
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("explorer.exe", "https://vandp.tistory.com/");
+        }
+
+        private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
+        {
+            pictureBox2.Visible = true;
+            pictureBox1.Visible = false;
+        }
+
+        private void pictureBox2_MouseLeave(object sender, EventArgs e)
+        {
+            pictureBox1.Visible = true;
+            pictureBox2.Visible = false;
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            if (coolTimeValid)
             {
                 // 자기 프로그램 현황 조사
                 string path = Application.ExecutablePath;
@@ -56,32 +91,13 @@ namespace WindowsFormsApp3
                         continue;
                     }
                 }
-                Process.Start("explorer.exe");
+                //Process.Start("explorer.exe");
 
                 // CoolTime Evaluation
-                button.Enabled = false;
-                button.Text = "Cool..";
+                pictureBox2.Enabled = false;
                 timer.Enabled = true;
                 coolTimeValid = false;
             }
-        }
-
-        private void timer_Tick(object sender, EventArgs e)
-        {
-            button.Enabled = true;
-            button.Text = "Reboot";
-            coolTimeValid = true;
-            timer.Enabled = false;
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("explorer.exe", "https://ahdelron.tistory.com/");
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("explorer.exe", "https://vandp.tistory.com/");
         }
     }
 }
