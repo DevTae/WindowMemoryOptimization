@@ -17,7 +17,10 @@ namespace WindowsFormsApp3
         String[] avoid_process_name = { "csrss", "lsass", "mstask",
                                         "smss", "spoolsv", "svchost", "System",
                                         "System Idle Process", "winlogon",
-                                        "winmgmt", "msdtc", "ctfmon", "dfssvc" };
+                                        "winmgmt", "msdtc", "ctfmon", "dfssvc",
+                                        "PresentationFontCache", "시스템 유효 시간 프로세스",
+                                        "dwm", "services", "wininit",
+                                        "dashost", "dllhost", "sihost"}; // dwm 시각적 효과 부여 프로세스
 
         Process[] thisProcess = null;
 
