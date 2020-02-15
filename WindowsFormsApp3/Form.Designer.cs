@@ -58,7 +58,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(366, 506);
+            this.label2.Location = new System.Drawing.Point(364, 506);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 15);
             this.label2.TabIndex = 2;
@@ -79,7 +79,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label4.Location = new System.Drawing.Point(412, 506);
+            this.label4.Location = new System.Drawing.Point(410, 506);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(89, 15);
             this.label4.TabIndex = 4;
@@ -112,9 +112,8 @@
             // 
             // Form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(501, 528);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.ClientSize = new System.Drawing.Size(500, 528);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label4);
